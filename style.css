@@ -1,0 +1,82 @@
+﻿/* style.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: url('/Image/milad-fakurian-seA-FPPXL-M-unsplash.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.325);
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px black;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid #712bf3;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 15px 0;
+  text-shadow: 1px 1px 3px black;
+}
+
+.social-icons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive for small screens */
+@media (max-width: 500px) {
+  .profile-img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .social-icons img {
+    width: 35px;
+    height: 35px;
+  }
+}
