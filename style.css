@@ -1,4 +1,4 @@
-﻿/* style.css */
+/* style.css */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-  background:url('Image/milad-fakurian-seA-FPPXL-M-unsplash.jpg') no-repeat center center fixed;
+  background: url('/Image/milad-fakurian-seA-FPPXL-M-unsplash.jpg') no-repeat center center fixed;
   background-size: cover;
   color: white;
   display: flex;
@@ -33,14 +33,25 @@ h1 {
   text-shadow: 2px 2px 5px black;
 }
 
+
+
 .profile-img {
   width: 180px;
   height: 180px;
+  position: relative;
   border-radius: 50%;
-  border: 3px solid #712bf3;
+  border: 3px solid #ffffffb2;
   object-fit: cover;
   margin-bottom: 20px;
 }
+.avatar-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 180px;
+  pointer-events: none; /* So it won't block clicks */
+} 
 
 p {
   margin: 15px 0;
@@ -79,4 +90,12 @@ p {
     width: 35px;
     height: 35px;
   }
+}
+.list,a{
+color: rgba(255, 255, 255, 0.992);
+text-decoration: none;
+font-size: large;
+}
+a:hover{ 
+color: #8d0aff;
 }
